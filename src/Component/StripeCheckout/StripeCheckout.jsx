@@ -3,7 +3,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { ColorRing } from 'react-loader-spinner'
 import './StripeCheckout.css';
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_API_KEY);
+const stripePromise = loadStripe(process.env.STRIPE_API_KEY);
 //console.log(process.env.REACT_APP_STRIPE_API_KEY);
 
 const StripeCheckout = ({ cartItems, cartSubtotal }) => {
