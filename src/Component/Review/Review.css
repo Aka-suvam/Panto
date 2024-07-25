@@ -1,0 +1,156 @@
+.review{
+    margin-top: 10vw ;
+    margin-bottom: 3vw;
+    height: 700px;
+    /*border:  1px solid black;*/
+}
+.review-heading1{
+    letter-spacing: 3px;
+    color: #e58411;
+    text-transform: uppercase;
+    font-family: gilroy-medium;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin:1vw 0;
+}
+.review-heading2{
+    color: #1e1e1e;
+    text-transform: capitalize;
+    font-family: gilroy-bold;
+    font-size: 40px;
+    text-align: center;
+}
+.review-container{
+    /*border: 1px solid black;*/
+    display: flex;
+    gap:2.5vw;
+    justify-content:center;
+    align-items: center;
+    margin: 3vw 5vw;
+    padding-left: 5vw;
+}
+.review-item img {
+    box-shadow: 0 80px  20px -50px #DFD4C8;
+}
+.review-details{
+    /*border: 1px solid black;*/
+    width: 330px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.7vw;
+    position: relative;
+    bottom:47vh;
+    left: 1.3vw;
+    border-radius: 1.2vw;
+    padding: 0 1.2vw;
+    
+}
+.review-details p{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5vw;
+    text-align: justify;
+    /*border: 1px solid black;*/
+}
+.review-name{
+    font-weight: 700;
+    font-size: 1.3vw;
+}
+.review-title{ 
+    font-size: 1rem;
+    font-weight: 300;
+    color: #222222;
+    text-transform: capitalize;
+}
+.review-text{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+.testimonial-rating{
+    color:orange;
+    display: flex;
+    gap:0.8vw;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0.5vw;
+}
+
+.star-not-shine{
+    opacity: 0.5;
+}
+
+#review-item-three .testimonial-rating{
+   
+    margin-top: 1vw;
+}
+#review-item-one .testimonial-rating{
+    margin-top: 1.3vw;
+}
+
+@media only screen and (max-width: 480px){
+
+    .review{
+        margin-top: 80vw ;
+        margin-bottom: 50vw;
+        height: 70vw;
+       
+    }
+    .review-heading1{
+        font-size: 4vw;
+        letter-spacing: 0.3vw;
+    }
+    .review-heading2{
+        font-size: 4.2vw;
+        padding: 1.5vw 0;
+
+    }
+    
+    .review-item img{
+        width: 65vw;
+        height: auto;
+        box-shadow: 0 20px 20px -10px #DFD4C8;
+    }
+    .review-details{
+        width: 58vw;
+        height: 55vw;
+        left: 3vw;
+        bottom: 64vw;
+        padding: 0 2vw;  
+        gap:0; 
+    }
+    .review-details img{
+        width: 23vw;
+        height: 23vw;
+    }
+   .review-details p{
+   line-height: 4vw;
+   padding-top: 0.7vw;
+
+   }
+   .review-name{
+    font-size: 3.4vw;
+   }
+   .review-title{
+    font-size: 2.7vw;
+   }
+   .review-text{
+    font-size: 2.9vw;
+    
+   }
+   .testimonial-rating{
+    margin: 0;
+    font-size: 3vw;
+   }
+    #review-item-three{
+        display: none;
+    }
+    #review-item-two{
+        display: none;
+    }
+}

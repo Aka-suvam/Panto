@@ -1,0 +1,62 @@
+/*Gobal-style */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  #root{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  input,select,textarea,button {
+  outline: none;
+}
+
+
+.text-link {
+    color: inherit;
+    text-decoration:none;
+    display: inline-block;
+}
+.text-link:hover{
+    color: #e99c2e;
+}
+.nav_link a.active{
+    color:#e99c2e;
+    font-weight: 800;
+}
+/* */
+.react-roast{
+    position: absolute;
+    top:6vw;
+   /* border: 1px solid red;*/
+}
+
+@media only screen and (max-width: 480px){
+    .react-roast{
+        width: 80%;
+        height: 4px;
+        font-size: 3.5vw;
+        top:15vw;
+        
+    }
+    .Toastify__toast{
+        height: 4px;
+    }
+}

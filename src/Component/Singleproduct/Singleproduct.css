@@ -1,0 +1,240 @@
+/*
+.singleprod{
+     border: 1px solid black;
+}*/
+
+.singleproduct{
+    padding: 6vw 2vw;
+    display: flex;
+    width: 100%;
+    margin-top: 6vw;
+    /*background-color: #F8F8F1;*/
+}
+.product_link{
+text-decoration: none;
+}
+.Single-product-img{
+    width: 50%;
+}
+.single-product-img1{
+    width: 350px;
+    height: 350px;
+    /*border: 2px solid black;*/
+    margin: 3vw auto;
+    
+
+}
+.single-product-img1 img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.single-product-img1 img:hover{
+    box-shadow: -1px 5px 20px 10px rgba(112, 112, 112, .2);
+
+}
+.otherimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1vw;
+    /*border: 1px solid black;*/
+    
+}
+.otherimg img{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.otherimg img:hover{
+    box-shadow: -1px 5px 20px 10px rgba(112, 112, 112, .2);
+}
+
+.Single-product-detail{
+    width: 40%;
+    height: 500px;
+   padding: 1vw 3vw;
+    background-color: #E5E5E5;
+   color: #0D1B39;
+}
+.desc{
+    font-size: 35px;
+    font-family: 'gilroy-bold';
+}
+.spec{
+    font-size: 17px;
+    font-family: Blinker, sans-serif;
+    text-align: justify;
+    margin: 2vw 0;
+    color:black;
+    letter-spacing: 0.2vw;
+    line-height: 2vw;
+}
+.Single-product-detail button{
+    font-size: 1.3vw;
+    font-family: gilroy-bold;
+    text-transform: uppercase;
+    padding: 1vw 3vw;
+    border: none;
+    cursor: pointer;
+    
+   /* background-color: white;*/
+}
+
+.add{
+    background-color: #04112c;
+    color: white;
+    cursor: pointer; 
+    width: 100%;
+    
+}
+.add:hover{
+    background-color: white;
+    color:#0a1a3c;   
+       
+   }
+/*
+.add:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}*/
+/*.buy{
+   margin-left: 4vw;
+   background-color: #04112c;
+   color: white;
+   cursor: pointer;
+}
+.buy:hover{
+ background-color: white;
+ color:#0a1a3c;   
+    
+}*/
+   
+
+.position{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 11vw;
+  
+}
+.position h6{
+width: 270px;
+height: 73px;
+font-size: 1.3vw;
+text-align: center;
+background-color: #dfdddd;
+padding: 1.4vw 1vw;
+color:#0D1B39;
+
+}
+.position span{
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: gilroy-light;
+    padding:0.4vw;
+    text-align: center;
+    
+}
+.quantityprice{
+    margin: 4vw 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:1vw;
+    /*border: 1px solid black;*/
+}
+.quantityprice h3{
+    font-size: 1.8vw;}
+    
+    
+.quantityprice p{
+    font-size: 1.8vw;
+}
+#sub,#value,#added{
+   background-color:white;
+   width: 50px;
+   height: 50px;
+   padding:0.5vw 0.5vw;
+   text-align: center;
+   font-size: 2vw;}
+
+   @media only screen and (max-width: 480px){
+
+    .singleproduct{
+    margin-top: 25vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5vw;
+    }
+    .Single-product-img{
+        width: 80vw;
+    }
+    .single-product-img1{
+        width: 49vw;
+        height: 47vw;
+        margin: 2vw auto;
+        margin-bottom: 6vw;
+    }
+    .otherimg{
+        gap:3vw;
+    }
+    .otherimg img{
+        width: 24vw;
+        height: 24vw;
+    }
+    .Single-product-detail{
+        width: 80vw;
+        height: 46vw;
+        
+    }
+.desc{
+    font-size: 5vw;
+    position: absolute;
+    top:25vw;
+     left: 35vw;
+}
+.spec{
+    font-size: 2.2vw;
+    line-height: 3.9vw;
+}
+.Single-product-detail button{
+    font-size: 2.8vw;
+    padding:2vw 7vw;
+}
+.buy{
+    margin-left: 15vw;
+   
+}
+.quantityprice h3, .quantityprice p{
+    font-size: 3vw;
+}
+
+#sub,#value,#added{
+    padding: 1.2vw;
+    font-size: 3.2vw;
+    width: 8vw;
+    height: 7vw;
+}
+
+.position{
+    flex-direction: column;
+    align-items: center;
+    gap:4vw;
+}
+.position h6{
+    font-size: 3.3vw;
+    text-align: center;
+    width:78vw;
+    height: 13vw;
+    padding: 4.5vw 1vw;
+}
+.position span{
+    font-size: 2.8vw;
+    padding : 0 0.6vw;
+}
+   }
+
+  

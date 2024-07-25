@@ -1,0 +1,28 @@
+{
+  "name": "furniture-react-app",
+  "version": "1.0.0",
+  "description": "react",
+  "scripts": {
+    "test": "jest",
+    "start": "npx parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "suvam",
+  "license": "ISC",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.6.4",
+    "@reduxjs/toolkit": "^2.2.4",
+    "@stripe/stripe-js": "^4.1.0",
+    "parcel": "^2.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-loader-spinner": "^6.1.6",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.22.3",
+    "react-toastify": "^10.0.5"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

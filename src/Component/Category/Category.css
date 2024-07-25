@@ -1,0 +1,122 @@
+.categories{
+    /* border:5px solid green;*/
+     padding: 5vw 0;
+     background-color: #EFEFEF;
+  
+}
+.category-heading{
+    font-family: 'gilroy-bold';
+    text-align: center;
+    text-transform: capitalize;
+    color: #0a1a3c;
+    margin: 4vw 0;
+}
+.categories-container{
+    height: 70px;
+    width: 50%;
+   /* border: 2px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2.1vw;
+    margin: 0 auto;
+    background-color: #D7D7D7;
+    border-radius: 15vw;
+}
+.categories-container button{
+    font-size: 1vw;
+    font-weight: 400;
+    padding: 1vw 2.1vw;
+    border: none;
+    border-radius:3vw;
+    cursor: pointer;
+    background-color:transparent;
+    transition: background-color 0.3s;
+}
+.categories-container button:hover{
+background-color: white;
+
+}
+ 
+.categories-container button.active {
+    background-color: white;
+  }        
+
+.sort-items{
+   display: flex;
+   justify-content: flex-end;
+   margin: 1vw 2vw;
+
+}
+.sort-items span{
+    font-family: gilroy-bold;
+    font-size: 1.1vw;
+    padding:0.4vw;
+    color: #0a1a3c;
+}
+
+#select {
+    padding:0.2vw 0.1vw;
+    font-size: 1.1vw;
+    /*font-family: 'gilroy';*/
+    color: #8d8d8d;
+    font-family: gilroy-regular;
+    border-color: #C4BFBE;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.products-list{
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: center;
+    padding:3vw 0;
+    align-items: center;
+    gap:3vw;
+    flex-wrap: wrap;
+    
+}
+@media only screen and (max-width: 480px){
+    .categories{
+        padding: 13vw 0;
+
+    }
+    .category-heading{
+     margin: 13vw 0;
+     font-size: 5vw;
+    }
+    .categories-container{
+        width: 77vw;
+        height: 14vw;
+    }
+    .categories-container button{
+        font-size: 2.5vw;
+        padding: 2vw 2.6vw;
+    }
+    .sort-items{
+        align-items: center;
+        margin: 8vw 3.3vw;
+       
+    }
+    .sort-items span {
+        font-size: 2.7vw;
+        letter-spacing: 0.2vw;
+        font-family: none;
+        font-weight: 700;
+      
+
+    }
+    #select{
+        font-size: 2.6vw;
+        padding: 1vw 0;
+        letter-spacing: 0.2vw;
+    }
+    select option{
+        font-size: 3vw;
+    }
+      .products-list{
+        padding: 3vw 4vw;
+        gap:10vw;
+      }
+   
+}

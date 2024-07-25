@@ -1,0 +1,56 @@
+
+.fail-section{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items: center;
+}
+.fail-font-one{
+    font-size: 2.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fail-font-two{
+    font-size: 2rem;
+    color: gainsboro;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.fail-img{
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fail-img img{
+    max-width: 100%;
+    height: auto;
+}
+.fail-links{
+  color: orangered;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px){
+
+    .fail-section{
+  margin: 4rem 2rem;
+    }
+
+  .fail-img{
+    width: 60vw;
+    
+  }
+  
+  .fail-font-one,.fail-font-two{
+    font-size: 5.5vw;
+    text-align: center;
+  }
+.fail-links{
+    font-size: 6.5vw;
+    padding-top: 2rem;
+}
+}

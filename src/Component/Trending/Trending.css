@@ -1,0 +1,102 @@
+.trending {
+    margin: 7rem 6.1vw;
+   /* border: 1px solid red;*/
+}
+.trending h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 1vw;
+    margin-bottom: 4.2rem !important;
+}
+.title-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2.4vw;
+}
+.btns button {
+    color: white;
+    background-color: #0D1B39;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+.btns {
+    display: flex;
+    gap: .8rem;
+}
+
+.btns button:hover {
+    background-color: black;
+}
+
+
+.row-container {
+    display: flex;
+    gap: 2.2rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 1rem .6rem;
+    /*border: 1px solid green;*/
+}
+.row-item {
+    outline: 2px solid rgba(0, 0, 0, .205);
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    
+   /* border: 1px solid blue;*/
+    width: 260px;
+    height: 320px;
+}
+
+.row-item:hover {
+    outline: 2px solid rgba(0, 0, 0, .6);
+}
+.item-header img {
+   /* width: 21rem;*/
+   width: 230px;
+   height: 250px;
+}
+
+.item-description {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    font-family: gilroy-light;
+    font-weight: 700;
+    color: #0D1B39;
+}
+.item-price{
+    margin: 0.4vw 0;
+    letter-spacing: 2px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row-container::-webkit-scrollbar {
+    display: none;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+@media only screen and (max-width: 480px){
+
+    .trending h3{
+        font-size: 1.9rem;
+    }
+    .btns button{
+        width: 2.5rem;
+        
+    }
+    .row-item{
+        height: 82vw;
+    }
+    .item-header img{
+        height: 64vw;
+    }
+
+}

@@ -1,0 +1,247 @@
+.contact{
+    height: 1000px;
+    padding:0  7vw;
+     /*border: 1px solid black;*/
+     background-color: #f8f8f1;
+  }
+ .contact input::placeholder{
+    color: grey;
+    opacity: 1;
+ }
+ .contact h1{
+     text-align: center;
+     color: #091839;
+     padding-top: 9vw;
+     margin-bottom: 5vw;
+     font-size: 2.5vw;
+     font-family: gilroy-bold;
+ }
+ .contact-container{
+     display: flex;
+     justify-content: center;
+    /* align-items: center;*/
+     gap: 6vw;
+     
+ }
+ .contact-right{
+     width: 50%;
+     /*border: 1px solid black;*/
+     /*padding: 0 1vw;*/
+ }
+ .contact-right-heading{
+     text-align: center;
+    
+     font-size: 2vw;
+     font-weight: 700;
+     text-transform: uppercase;
+     font-family: 'gilroy-light';
+     letter-spacing: 1px;
+ }
+ form{
+     margin: 4vw 0;}
+ 
+ .row{
+     display: flex;
+    justify-content: space-between;
+     margin: 2vw 0;
+ }
+ .row input{
+    width: 17vw;
+ }
+ .row1{
+     display: flex;
+     flex-direction: column;
+ }
+ .row2{
+     display: flex;
+     flex-direction: column;
+ }
+ label {
+     font-size: 1.2vw;
+     display: block;
+     font-family: gilroy-medium;
+    
+ }
+ 
+ form  input,textarea{
+     border-radius: 2vw;
+     font-size: 1.1vw;
+     padding: 1vw;
+     margin: 1vw 0;
+     border:1px solid #c0c0c0;
+ }
+ 
+ #subject{
+     width: 100%;
+     margin-bottom: 2vw ;
+ }
+ #submit{
+    background-color: black;
+    color: white;
+   cursor: pointer;
+    font-family: gilroy-bold;
+ }
+ #submit:hover{
+    color: grey;
+ }
+ .contact-left{
+     width: 50%;
+     /*border: 1px solid red;*/
+ }
+ .width{
+    width: 530px;
+     border-radius: 0.6vw;
+     padding: 2vw;
+     background-color: white;
+     box-shadow: 0 0 30px #0000001a;
+ }
+ #width-heading{
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'gilroy-bold';
+    
+ }
+ .contact-left h4{
+ font-size: 2.4vw;
+ font-family: gilroy-bold;
+
+ margin: 0.5vw 0;
+ letter-spacing: 1px;
+ }
+ .contact-left p{
+     font-family: 'gilroy-light';
+     font-size: 1.2vw;
+     margin: 1vw 0;
+    
+ } 
+ 
+ .address,.contact-list,.opentime{
+ margin: 2vw 0;
+ }
+ .location{
+     display: flex;
+     align-items: center;
+     gap:0.6vw;
+ }
+ .location-svg{
+     width: 30px;
+     height: 30px;
+     color: #172B4D;
+ }
+ .phone{
+     display: flex;
+     align-items: center;
+     gap:0.6vw;
+ }
+ .phone-svg{
+     width: 30px;
+     height: 30px;
+     color: #172B4D;
+ }
+ .email{
+     display: flex;
+     align-items: center;
+     gap:0.6vw;
+ }
+ .email-svg{
+     width: 40px;
+     height: 50px;
+     color: #172B4D;
+ }
+
+ @media only screen and (max-width: 480px){
+
+    .contact{
+     height:295vw;    
+    }
+    .contact h1{
+        font-size: 4vw;
+        padding-top: 26vw;
+        margin-bottom: 12vw;
+    }
+
+    .contact-container{
+        flex-direction:column ;
+        align-items: center;
+        gap:22vw;
+    }
+    .contact-right{
+        width: 50vw;
+        }
+    .contact-right-heading{
+        font-size: 3.5vw;
+        letter-spacing: 0.3vw;
+        padding-bottom:5vw;
+    }
+
+    .row{
+        flex-direction: column;
+        gap:4vw;
+    }
+
+    .row input{
+        width: 50vw;
+    }
+    .row1,.row2{
+        gap:2.3vw;
+    }
+    label{
+        font-size: 3.5vw;
+    }
+    form  input,textarea{
+        font-size: 3.2vw;
+        width: 30vw;
+        padding: 1.5vw 1vw;
+    }
+    #message{
+        width: 50vw;
+        margin: 3.5vw 0;
+    }
+    #subject{
+        margin: 3.7vw 0;
+    }
+    .contact-left{
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .width{
+        width: 56vw;
+     }
+     #width-heading{
+        font-size: 3.9vw;
+        text-align: center;
+        font-family: 'gilroy-bold';
+        color: #091839;
+     }
+     .contact-left h4{
+        font-size: 3.6vw;
+        letter-spacing: 0.3vw;
+     }
+     .contact-left p{
+        font-size: 3.2vw;
+        line-height: 4.5vw;
+        letter-spacing: 0.3vw;
+     }
+     .location-svg{
+        width: 14vw;
+        height: 14vw;
+     }
+     .phone-svg,.email-svg{
+        width: 8vw;
+        height: 10vw;
+     }
+     .location{
+        gap:4vw;
+     }
+     .phone{
+        gap:3.2vw;
+     }
+     .email{
+        gap:2vw;
+     }
+     .address, .contact-list, .opentime {
+        margin: 6vw 0;
+    }
+ }

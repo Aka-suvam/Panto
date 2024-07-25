@@ -1,0 +1,266 @@
+
+.Header{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:0 60px;
+    position:absolute;
+    top:4%;
+    color:white;  
+}
+
+
+.logo_container{
+display: flex;
+gap:1vw;
+align-items: center;
+/*border:1px solid red;*/
+}
+.logo-img-container{
+    width: 65px;
+    height: 65px;
+}
+.logo-img-container img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4vw;
+    border: none;
+}
+.brand_title{
+    font-family: 'gilroy-bold';
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav_link{
+    position: absolute;
+    left: 31.1vw;
+}
+.nav_link ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    
+}
+.nav_link  ul li{
+    font-family: 'gilroy-light';
+    font-size: 20px;
+    /*font-weight: 600;*/
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.cart{
+ 
+    width: 45px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+
+}
+.cart-number{
+    position: absolute;
+    top:0.6vw;
+    left: 88vw;
+    font-size: 1.7vw;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    background-color: #E58411;
+    color: white;
+    padding: 0.3vw 0.5vw ;
+    border-radius: 20px;
+}
+
+.mobile-menu,.Mobile-menu{
+    display: none;
+}
+.mobile-nav-full{
+    display: none;
+}
+/*shop page styiling */
+.navbar{
+    background-color: white;
+    color:black;
+    width: 100%;
+    margin: 0;
+    padding: 2.5vw 3vw;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+    height: 85px;
+    font-weight: 800;
+    box-shadow: -2px 7px 5px -6px rgba(0, 0, 0, .61);
+}
+
+.Cart{
+    color: black;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.cartnumber{
+    position: absolute;
+    top:0.5vw;
+    left:95vw;
+    font-size: 1.6vw;
+    background-color: #e58411;
+    color: white;
+    padding: 0.2vw 0.6vw;
+    border-radius: 20px;
+
+}
+
+@media only screen and (max-width: 480px){
+    .Header { 
+    top:7px;
+    height: 50vw; 
+    margin: 0 4vw;
+    align-items:flex-start;
+    
+   /*border:1px solid red;*/
+}
+
+   .logo_container{
+     gap:7px;
+    }
+    .logo-img-container{
+      width: 7.5vw;
+      height: 6.5vw;
+    }
+    .logo-img-container img{
+        border-radius: 20px;
+    }
+    .brand_title{
+        font-size: 2.8vw;
+    }
+    .nav_link ul  li{
+        display: none;
+    }
+    .cart{
+        width: 5vw;
+        height: 5vw;
+        position: absolute;
+        /*right: 13vw;*/
+        right: 10vw;
+       
+    }
+    .cart-number{
+        font-size: 2.6vw;
+        border-radius: 5vw;
+        padding:0.3vw 0.8vw;
+        position: relative;
+        top:0;
+        /*left: 75vw;*/
+        left:-9vw;
+        
+       
+    }
+
+    /*shop page styiling */
+    .navbar {
+    background-color: white;
+    height: 13vw; 
+    margin: 0;
+    position: fixed;
+    top:0.1vw;
+    padding: 0 2.5vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: black;
+    box-shadow: -2px 7px 5px -6px rgba(0, 0, 0, .61);
+    
+    }
+    .Cart{
+        color: black;
+        width: 5vw;
+        height: 5vw;
+        position: absolute;
+        right:17vw;
+        top:3.5vw;
+    }
+   .cartnumber{
+    position: relative;
+    top:-1.5vw;
+    left:-13.5vw;
+    font-size: 3vw;
+   }
+
+   .mobile-menu
+   {
+    display: inline-block;
+    font-size: 4.5vw;
+    font-weight: 1000;
+    color: white;
+    position: absolute;
+    right: 0.1vw; 
+    top: 0.4vw;
+    cursor: pointer;
+   }
+   .Mobile-menu{
+    display: inline;
+    position: absolute;
+    right: 2.5vw; 
+    top: 4vw;
+    color: black;
+    font-size: 4.5vw;
+    cursor: pointer;
+   }
+   .showmobilenav{
+    display: flex;
+   }
+   .hidemobilenav{
+    display: none;
+   }
+   .mobile-nav-full{
+    background-color: #232323;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    overflow: hidden;
+   }
+  .cross{
+    font-size: 7vw;
+    position: absolute;
+    right: 8vw;
+    top:6vw;
+    color: white;
+    cursor: pointer;
+  }
+  .mobile-nav_link a{
+    text-decoration:none;
+    color: white;
+    display: inline-block;
+  }
+  .mobile-nav_link a.active{
+    color:#e99c2e;
+    font-weight: 800;
+}
+ .mobile-nav_link{
+    width: 80vw;
+    display: flex;
+    
+    flex-direction: column;
+    margin-left: 25vw;
+    margin-top: 45vw;
+    font-family: 'gilroy-light';
+    font-size: 8vw;
+    gap:3vw;
+   
+    
+  }
+  
+  
+}
