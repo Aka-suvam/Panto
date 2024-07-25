@@ -1,6 +1,6 @@
 import React from "react";
-import  ReactDOM  from "react-dom/client";
-import { createBrowserRouter,RouterProvider,Outlet } from 'react-router-dom';
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from "./Component/Header/Header.jsx";
@@ -18,76 +18,37 @@ import FailPay from "./Component/FailPay/FailPay.jsx";
 import { Provider } from "react-redux";
 import appStore from "./ulits/appStore.jsx";
 
-
-
-const App=()=>{
-
-    
-    return(
-        
+const App = () => {
+    return (
         <>
-        <ToastContainer className="react-roast"/>
-       
-        <Header/> 
-       
-        <Outlet/>
-        
-       
-       <Footer/>
-      
-       </>
-      
+            <ToastContainer className="react-toastify" />
+            <Header />
+            <Outlet />
+            <Footer />
+        </>
     );
 };
 
-const appRoute=createBrowserRouter([
+const appRoute = createBrowserRouter([
     {
-        path:"/",
-        element:<App/>,
-        children:[
-            {
-                path:"/",
-                element:<Home/>
-            },
-            {
-
-                path:"/shop",
-                element:<Shop/>
-            },
-            {
-                path:"/products/:productId",
-                element:<ProductPage/>
-            },
-            {
-                path:"/about",
-                element:<AboutUs/>
-            },
-            {
-                path:"/contact",
-                element:<ContactUs/>
-            },
-            {
-                path:"/Shopping-cart",
-                element:<ShoppingCart/>
-            }]
-
-        },
-        {
-            path:'/success',
-            element:<Success/>
-        },
-        {
-            path:'/fail',
-            element:<FailPay/>
-        }
-    
+        path: "/",
+        element: <App />,
+        children: [
+            { path: "/", element: <Home /> },
+            { path: "/shop", element: <Shop /> },
+            { path: "/products/:productId", element: <ProductPage /> },
+            { path: "/about", element: <AboutUs /> },
+            { path: "/contact", element: <ContactUs /> },
+            { path: "/shopping-cart", element: <ShoppingCart /> }
+        ]
+    },
+    { path: '/success', element: <Success /> },
+    { path: '/fail', element: <FailPay /> }
 ]);
 
-const root =ReactDOM.createRoot(document.getElementById("root"));
-root.render( 
-<Provider store={appStore}>
-<RouterProvider router={appRoute} />
-</Provider>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <Provider store={appStore}>
+        <RouterProvider router={appRoute} />
+    </Provider>
 );
-
-
