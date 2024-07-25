@@ -6,13 +6,15 @@ website features a modern and intuitive design, with easy-to-use navigation and 
 simple shopping experience that puts the focus on the products.</p>
 
 
-👉 Live Demo: <a href='https://minimalist-e-commerce.vercel.app/'>Ecommerce Demo</a>
+👉 Live Demo: <a href='https://panto-furniture-rho.vercel.app'/>Ecommerce Demo</a>
 
 <h3>Build with:</h3>
 
 » Vanilla CSS <br>
-» React JS
+» React JS <br>
 » Parcel
+
+
 
 
 
