@@ -35,4 +35,5 @@ Introducing Panto ,   a minimalist  E-commerce website that  focused on selling 
 -  **Notification** : Used React-Toastify NPM package for notifications . whenever user add product to cart ,remove,clear cart or change the quantify of product.<br></br>
 -  **Loading Spinner**: Used react-loader-spinner  NPM package for Loading Spinner Experience. When the user clicks the "Proceed to Checkout" button, it takes some time for the Stripe payment checkout page to load. During this time, the loading spinner is displayed to indicate that the process is in progress.
 
-
+## To make payment --
+--Use this dummy visa data for testing , visa :4000003560000008  ,MM/YY : 02/25 , CVC :321 , name :Any name
