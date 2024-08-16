@@ -7,8 +7,8 @@
 # 💖 Panto
 Introducing Panto ,   a minimalist  E-commerce website that  focused on selling a variety of furniture items . It is   powered by React js  that effortlessly links users with their favorite Furniture products. This website features a Simple and intuitive design, with easy-to-use navigation and a simple shopping experience that puts the focus on the products.
 
-👉 Live Demo:  <a href='https://panto-furniture-rho.vercel.app'/>Panto</a>
-
+👉  Live : <a href='https://panto-furniture-rho.vercel.app'/>Panto</a> <br/>
+👉  Demo : <a href="https://www.youtube.com/watch?v=4NKbNXxAq-s"/>Video</a>
 <h3>Build with:</h3>
 
 » React JS <br>
