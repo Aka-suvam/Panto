@@ -51,7 +51,7 @@ const Contact = () => {
             </div>
             <div className="opentime">
               <h4>Open Time</h4>
-              <p>Monday-Friday: 10:00-20:00</p>npm
+              <p>Monday-Friday: 10:00-20:00</p>
               <p>Saturday-Sunday: 11:00-18:00</p>
             </div>
           </div>
