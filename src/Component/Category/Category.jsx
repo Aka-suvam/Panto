@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link,useLocation, useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { items } from "../../ulits/MockData";
 import Product from "../Product/Product.jsx";
 import './Category.css';
@@ -7,7 +7,6 @@ import './Category.css';
 const Category=()=>{
    const [productlist,setproductlist]=useState(items);
    const [changeItem,setchangeItem]=useState('');
-  // const location = useLocation();
  const [searchParams] = useSearchParams();
 
 
@@ -41,9 +40,7 @@ const Category=()=>{
  
  //search
  useEffect(() => {
-   /*const searchParams = new URLSearchParams(location.search);
-   const searchQuery = searchParams.get('search') || '';
-   const trimmedSearchQuery = searchQuery.trim().toLowerCase();*/
+   
      const  trimmedSearchQuery = (searchParams.get('search') || '').trim().toLowerCase();
 
    
