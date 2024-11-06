@@ -53,7 +53,7 @@ const Category=()=>{
     });
   
     setproductlist(filteredProducts);
-  }, [location.search]);
+  }, []);
 
   function toggleActive(e) {
    const buttons = document.querySelectorAll('.categories-container button');
